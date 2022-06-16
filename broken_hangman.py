@@ -1,7 +1,3 @@
-# Note: The code used in Hacker Hangman was inspired by https://inventwithpython.com/invent4thed/chapter8.html. 
-# This was one of the books that got me started on Python.
-# The website also has instructions for you to make many other exciting games. 
-
 import random
 HANGMAN_PICS = ['''
   +---+
@@ -48,7 +44,7 @@ def getRandomWord(wordList):
 
 def displayBoard(missedLetters, correctLetters, secretWord):
     print(HANGMAN_PICS[len(missedLetters)])
-    print(
+    print())
 
     print('Missed letters:', end=' ')
     for letter in missedLetters:
